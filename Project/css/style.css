@@ -1,0 +1,628 @@
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/night.jpg);
+	background-size: cover;
+	background-position: top center;; }
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 12px 0; }
+
+.name h1{
+	font-size: 30px;
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+	text-decoration: none;
+    color: white;
+	font-size: 20px;
+    font-weight: bolder;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.home-text{
+    margin-left: 8%;
+    margin-top: 12%;
+}
+
+.home-text h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.home-text h2{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.home-text h3{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.home-text span{
+    color: rgb(56, 69, 185); 
+	font-size: 3rem;
+}
+
+.home-text a{
+    background-color: transparent;
+	border: 2px solid rgb(56, 69, 185);
+	color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 2px 25px;
+}
+
+.home-text a:hover {
+	color: white;
+	background-color: darkred;
+}
+
+.home-img{
+    width: 35%;
+    height: 62%;
+    position: absolute;
+    right: 170px;
+	bottom: 100px; } 
+
+
+.home-img:hover{
+    transform: scale(1.15);
+}
+
+
+
+#about{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.svg);
+    background-size: cover;
+    overflow: hidden;
+    background-color: white;
+}
+
+#about .ab-title h1{
+    width: 90%;
+    margin: 0 42%;
+    padding: 1.5rem 0;
+	font-size: 40px;
+	color: white;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about .img{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 8%;
+    height: auto; 
+    box-shadow: -15px -15px 10px 10px black;
+}
+
+.about{
+    position: absolute;
+    right: 170px;
+	bottom: 130px;
+    width: 28%;
+    height: 52%;
+    /* border: 1px solid black; */
+    background-color: antiquewhite;
+    border-radius: 25px;
+    box-shadow: 15px 15px 10px 10px black;
+} 
+
+.about .about-info{
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+}
+
+.about .about-info .about-quest{
+    height: auto;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.about .about-info .about-myname{
+    padding-bottom: 0.5rem;
+}
+
+.about .about-info span{
+    color: rgb(56, 69, 185);
+    font-size: 1.5em;
+}
+
+/* */
+/* .zemin{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:-100vw;
+    background: rgba(0,0,0,.9);
+    overflow-x: hidden;
+    transition: .5s;
+}
+.zemin-icerik{
+    position: relative;
+    top:25%;
+    width: 100%;
+    text-align: center;
+}
+
+.zemin a{
+    display: block;
+    padding:8px;
+    text-decoration: none;
+    color:#818181;
+    transition: .4s;
+    font-size:36px;
+    border-top:solid 2px rgba(241,241,241,0);
+    border-bottom:solid 2px rgba(241,241,241,0);
+}
+
+.zemin-icerik a:hover, .zemin-icerik a:focus{
+    color:#f1f1f1;
+    border-top:solid 2px #f1f1f1;
+    border-bottom:solid 2px #f1f1f1;
+    background: #b71540;
+}
+.zemin .kapatBtn{
+    position: absolute;
+    top:40px;
+    right: 40px;
+    font-size:60px;
+} */
+
+/*Courses*/
+
+#skills{
+    color: #333;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+#skills .sk-title h1{
+    width: 90%;
+    margin: 0 42%;
+    padding: 1.5rem 0;
+	font-size: 40px;
+	color: rgb(56, 69, 185);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#skills .langs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#skills .langs .container{
+    width: 70%;
+    height: 130px;
+    border: 4px solid rgb(56, 69, 185);
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+#skills .langs .container:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 2px black, 0 0 25px blue, 0 0 5px red;
+}
+
+.langs .lang{
+    display: flex;
+    padding: 0.5rem;
+}
+
+.langs .lang .lang-img{
+    margin-right: 1.5rem;
+}
+
+.langs .lang .lang-img img{
+    width: 110px;
+    height: auto;
+}
+
+.langs .lang .lang-info .title{
+    padding-top: 1rem;
+    letter-spacing: 1.2px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.langs .lang .lang-info .title span{
+    color: white;
+}
+
+.langs .lang .lang-info .status{
+    height: 18px;
+    min-width: 700px;
+    position: relative;
+    background: grey;}
+
+
+.langs .lang .lang-info .status1::after{
+    content: '';
+    background: orange;
+    height: 18px;
+    min-width: 80%;
+    position: absolute;
+    top: 0; left: 0;} 
+    
+
+
+.langs .lang .lang-info .status2::after{
+    content: '';
+    background: orange;
+    height: 18px;
+    display: block;
+    min-width: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.langs .lang .lang-info .status3::after{
+    content: '';
+    background: orange;
+    height: 18px;
+    display: block;
+    min-width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+
+.langs .container .span{
+    color: white;
+    position: absolute;
+    margin-top: 63px;
+    margin-left: 145px;
+}
+
+/*  */
+#education{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+#education .container{
+    width: 60%;
+    height: 75%;
+    border: 5px solid brown;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 10px 10px 10px 10px brown;
+}
+
+#education .ed-title h1{
+    width: 90%;
+    margin: 0 42%;
+    padding: 1.5rem 0;
+	font-size: 40px;
+	color: brown;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#education .sch-btn .left-btn{
+    position:absolute;
+    left: 8%;
+    bottom: 50%;
+    font-size: 60px;
+    color: brown;
+}
+
+#education .sch-btn .left-btn:hover{
+    left: 7%
+}
+
+#education .sch-btn .right-btn{
+    position:absolute;
+    right: 8%;
+    bottom: 50%;
+    font-size: 60px;
+    color: brown;
+}
+
+#education .sch-btn .right-btn:hover{
+    right: 7%
+}
+
+.schools{
+    padding: 0 5rem;
+}
+
+.schools img{
+    border-radius: 30px;
+    padding-bottom: 0.5rem;
+}
+
+.schools h1{
+    color: brown;
+    padding-bottom: 0.5rem;
+}
+
+
+#references{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+#references .re-title h1{
+    width: 90%;
+    margin: 0 42%;
+    padding: 1.5rem 0;
+	font-size: 40px;
+	color: rgb(56, 69, 185);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container3{
+    position: absolute;
+    left: 320px;
+	bottom: 130px;
+    width: 20%;
+    height: 50%;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    box-shadow: -10px 10px 8px 8px black;
+    z-index: 100;} 
+
+
+.container3:hover{
+    display: none;
+}
+
+.container4{
+    position: absolute;
+    right: 320px;
+	bottom: 130px;
+    width: 20%;
+    height: 50%;
+    
+    background-color: antiquewhite;
+    border-radius: 25px;
+    box-shadow: 10px 10px 8px 8px black;
+    z-index: 100;
+} 
+
+.container4:hover{
+    display: none;
+}
+
+#references .container3 img{
+    margin: 4.1rem 0.9rem;
+}
+
+#references .container4 img{
+    margin: 4.7rem 2.5rem;
+}
+
+.container1{
+    position: absolute;
+    left: 285px;
+	bottom: 130px;
+    width: 20%;
+    height: 50%;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    box-shadow: -10px 10px 8px 8px black;
+    z-index: 10;
+} 
+
+.container2{
+    position: absolute;
+    right: 285px;
+	bottom: 130px;
+    width: 20%;
+    height: 50%;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    box-shadow: 10px 10px 8px 8px black;
+} 
+
+.reference .reference-info{
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+}
+
+.reference .reference-info .reference1-photo,.reference2-photo{
+    height: auto;
+    margin: auto;
+}
+
+.reference .reference-info .reference-name,.reference-phone,.reference-adress,.reference-person{
+    padding-bottom: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.reference .reference-info .reference-name span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* footer */
+
+.contact{
+    color: #fff;
+    padding: 1rem;
+	background-color: #062e51;
+}
+
+.contact .contact-form{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form .contact-head{
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.contact .contact-form ul{
+    list-style-type: none;
+    margin-top: 1rem;
+    display: flex;
+    align-self: center;
+}
+
+.contact .contact-form ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contact .contact-form ul li a:hover{
+    opacity: 0.8;
+}
+
+.form-group{
+    padding: 2rem 0;
+}
+
+.form-control{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 5px;
+}
+
+.form-group label{
+    display: block;
+}
+
+.btn{
+    padding: 0.5rem 1.5rem;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*gece modu
+/*gece modu site
+.night-mode,
+.night-mode body {
+  background-color: #272727 !important;
+  color: #fff;
+}
+.night-mode a {
+  color: #e5e5e5;
+}*
+
+
+
+
+
+
+
+
+
+
+
+/* gece modu ikon
+.theme-mode {
+  margin-right: 20px;
+  display: block;
+  float: left;
+}
+.theme-mode:hover,
+.theme-mode:focus,
+.theme-mode:active {
+  transform: rotate(180deg);
+  transition-duration: 1.2s;
+}
+.theme-mode a,
+.theme-mode a:hover {
+  text-decoration: none;
+}
+.theme-mode span {
+  display: block;
+}
+.theme-mode i {
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+/*gece modu
+ */
